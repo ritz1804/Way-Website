@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=BioRhyme:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/3ea53c1d6b.js" crossorigin="anonymous"></script>
+
+    <title>WAY</title>
+</head>
+<body>
+
+    <section class="space">
+        <div>
+            <h3 class="space-normal">YOUR</h3>
+            <h3 class="space-outlined">ROUTE</h3>
+        </div>
+    </section>
+
+    <section class="space-result">
+        <div>
+            <h3 class="space-normal">TIME: <%= time %> min</h3>
+        </div>
+        <div class="row result"> 
+            <div class = "col-lg-6">
+                <h3 class="space-outlined-result">STATIONS: <%= numOfStations %></h3>
+            </div>
+            <div class ="col-lg-6">
+                <h3 class="space-outlined-result">INTERCHANGES: <%= numOfInterchanges %></h3>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="path-list">
+            <% for (var i = 0; i < newListItems.length; i++) { %>
+                <% if(newListItems[i][2] == ''){ %>
+                    <p> <i class="fas fa-square" style="color: <%= newListItems[i][1] %>;"></i> <%= newListItems[i][0] %> </p>
+                  <% } else{ %>  
+                    <p> <i class="fas fa-square" style="color: <%= newListItems[i][1] %>;"></i> <%= newListItems[i][0] %> <p class="para">Change to <%= newListItems[i][2] %> line</p> </p>
+                <% } %>
+            <% } %>
+        </div>
+    </section>
+
+    <section class="space">
+        <div>
+            <form action="/travel" method="post">
+                <button type="submit" class="btn btn-success btn-lg" name="button">NEW TRAVEL</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
