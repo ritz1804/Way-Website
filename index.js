@@ -67,7 +67,7 @@ app.post("/", function(req,res) {
                 }
             }
 
-            console.log(line);
+            //console.log(line);
 
             var final = [];
 
@@ -79,7 +79,7 @@ app.post("/", function(req,res) {
                 final.push(subarray);
             }
 
-            console.log(final);
+            //console.log(final);
 
             res.render("list", {time: timeInt, numOfInterchanges: numOfInterchanges, numOfStations: numOfStations, newListItems: final});
         })
