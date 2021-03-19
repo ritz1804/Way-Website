@@ -5,6 +5,28 @@
 Show some love 💜 and Star ⭐️ the Repository to support the project.
 </p>
 
+## : Screenshots
+
+<p align="center">
+  <img alt="WAY" src="screenshot1.png" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="WAY" src="screenshot2.png" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="WAY" src="screenshot3.png" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="WAY" src="screenshot4.png" width="100%" />
+</p>
+
+<p align="center">
+  <img alt="WAY" src="screenshot5.png" width="100%" />
+</p>
+
 ## :rocket: Get Up and Running 
 
 1. **Go to your terminal and execute this command**
